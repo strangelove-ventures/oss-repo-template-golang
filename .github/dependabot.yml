@@ -1,0 +1,12 @@
+version: 2
+updates:
+  # check dependencies in go.mod
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  # checks dependencies in github workflows
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
