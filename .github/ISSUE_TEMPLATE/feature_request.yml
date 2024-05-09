@@ -10,7 +10,7 @@ body:
       placeholder: What's your end goal?
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: version
     attributes:
       label: version
