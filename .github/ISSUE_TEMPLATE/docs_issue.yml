@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: Thanks for taking the time to let us know how we can approve the docs!
-  - type: textarea
+  - type: input
     id: docs_page_link
     attributes:
       label: What page needs improvement?
