@@ -1,5 +1,6 @@
-# This mergify configuration is used only for backporting.
-# Please read the comments below to correctly configure the branches, labels, etc.
+# This mergify configuration is used for backporting only. This setup
+# will backport a PR after being approved if it has the label 'backport'.
+# Please see the comments below for configuring branches, labels, etc.
 #
 pull_request_rules:
   - name: backport to maintained branches
@@ -7,8 +8,8 @@ pull_request_rules:
       - label=backport # create a label in your project called backport
     actions:
       backport:
-        branches: # list branches that backporting can originate from
+        branches: # the list of branches the pull request should be copied to.
           - main
-        assignees: 
-            - "{{ author }}" # assign PR to the Author of the Backport Instigator
+        assignees: # assign newly created backport PR to author
+            - "{{ author }}"
         title: "`[BP: {{ destination_branch }} <- #{{ number }}]` {{ title }}"
