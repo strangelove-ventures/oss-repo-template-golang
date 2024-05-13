@@ -1,0 +1,14 @@
+# This mergify configuration is used only for backporting.
+# Please read the comments below to correctly configure the branches, labels, etc.
+#
+pull_request_rules:
+  - name: backport to maintained branches
+    conditions:
+      - label=backport # create a label in your project called backport
+    actions:
+      backport:
+        branches: # list branches that backporting can originate from
+          - main
+        assignees: 
+            - "{{ author }}" # assign PR to the Author of the Backport Instigator
+        title: "`[BP: {{ destination_branch }} <- #{{ number }}]` {{ title }}"
