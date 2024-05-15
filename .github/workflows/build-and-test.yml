@@ -1,5 +1,5 @@
-# This workflow will validate bebuild a Go project, execute mod tidy, and run tests
-# on every push to the repository.
+# This workflow will ensure the project is tidy, buildable and all tests pass
+# on every push to the main branch and on every pull request.
 #
 name: build
 
