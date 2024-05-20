@@ -22,7 +22,8 @@ linters:
   - gci
   - goconst
   - gocritic
-  - gofmt
+  - godot
+  - gofumpt
   - gosec
   - gosimple
   - gosmopolitan
@@ -34,6 +35,7 @@ linters:
   - nilerr
   - nilnil
   - noctx
+  - staticcheck
   - stylecheck
   - testifylint
   - thelper
