@@ -1,5 +1,7 @@
 golangci_lint_cmd=golangci-lint
 golangci_version=v1.57.2
+gofumpt_cmd=gofumpt
+gofumpt_version=v0.6.0
 
 default: help
 
@@ -29,3 +31,12 @@ lint-fix:
 		go install github.com/golangci/golangci-lint/cmd/golangci-lint@$(golangci_version); \
 	fi
 	@$(golangci_lint_cmd) run ./... --fix --timeout 15m
+
+.PHONY: gofumpt
+## gofumpt: Format the code with gofumpt
+gofumpt:
+	@echo "--> Running gofumpt"
+	@if ! $(gofumpt_cmd) -version 2>/dev/null | grep -q $(gofumpt_version); then \
+		go install mvdan.cc/gofumpt@$(gofumpt_version); \
+	fi
+	@gofumpt -l -w .
