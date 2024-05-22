@@ -14,6 +14,11 @@ body:
       placeholder: Tell us what you see!
     validations:
       required: true
+  - type: input
+    id: Version
+    attributes:
+      label: version
+      description: What version of the software are you using?
   - type: textarea
     id: logs
     attributes:
