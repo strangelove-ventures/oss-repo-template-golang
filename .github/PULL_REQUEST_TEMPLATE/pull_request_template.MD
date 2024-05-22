@@ -14,6 +14,8 @@ If so, please describe what changes users might need to make as a result of this
 ### Other information
 e.g. Does this impact upstream or downstream dependencies in other projects?
 
+### Required for all PRs:
+
 - [ ] I have read and agree to follow the [Code of Conduct](../../../CODE_OF_CONDUCT.md) for this project.
 - [ ] I have read and followed the guidelines in the [Contributor's Guide](../../../CONTRIBUTING.md).
 - [ ] I understand I should follow the guidelines in the [Security Guide](../../../SECURITY.md) for any security-related issues or PRs.
