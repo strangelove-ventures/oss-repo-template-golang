@@ -20,6 +20,10 @@ builds:
       - linux
       - windows
       - darwin
+    goarch:
+      - amd64
+      - arm
+      - arm64
 
 archives:
   - format: tar.gz
@@ -37,11 +41,17 @@ archives:
         format: zip
 
 changelog:
+  use: github
   sort: asc
-  filters:
-    exclude:
-      - "^docs:"
-      - "^test:"
+  groups:
+    - title: Features
+      regexp: '^.*?feat(\([[:word:]]+\))??!?:.+$'
+      order: 0
+    - title: "Bug fixes"
+      regexp: '^.*?bug(\([[:word:]]+\))??!?:.+$'
+      order: 1
+    - title: Others
+      order: 999
 
 checksum:
   name_template: SHA256SUMS-{{.Version}}.txt
