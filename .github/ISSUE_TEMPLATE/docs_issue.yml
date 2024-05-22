@@ -1,30 +1,28 @@
-name: Bug Report
+name: Docs Issue
 description: File a bug report.
-title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
-assignees:
-  - octocat
+title: "[Docs Issue]: "
+labels: ["docs", "triage"]
 body:
   - type: markdown
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: textarea
-    id: what-happened
+      value: Thanks for taking the time to let us know how we can approve the docs!
+  - type: input
+    id: docs_page_link
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: What page needs improvement?
+      value: Link a URL if possible
     validations:
       required: true
   - type: textarea
-    id: logs
+    id: description
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: Description
+      description: Please describe the way the docs didn't meet your needs.
+  - type: textarea
+    id: remedy
+    attributes:
+      label: Remedy
+      description: Please describe what you think needs to be added or changed for the docs to meet your needs.
   - type: checkboxes
     id: terms
     attributes:
