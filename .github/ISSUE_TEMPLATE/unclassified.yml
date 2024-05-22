@@ -1,6 +1,6 @@
 name: Unclassified Issue
 description: Open an issue
-title: "unclassified: "
+title: "[Unclassified]: "
 labels: ["unclassified", "triage"]
 body:
   - type: markdown
