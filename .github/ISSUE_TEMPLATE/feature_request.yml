@@ -1,6 +1,6 @@
 name: Feature Request
 description: Request an enhancement or new feature
-title: "[Feature]: "
+title: "feature: "
 body:
   - type: textarea
     id: inspiration
@@ -10,11 +10,12 @@ body:
       placeholder: What's your end goal?
     validations:
       required: true
-  - type: input
-    id: version
+  - type: textarea
+    id: vallueadd
     attributes:
-      label: version
-      description: What version of the software are you using?
+      label: Use Cases and Audiences
+      description: What new possibilities does this feature enable, and what types of users will find it helpful?
+      placeholder: Who is the audience and what new applications would this feature enable?
   - type: checkboxes
     id: terms
     attributes:
@@ -23,11 +24,3 @@ body:
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
