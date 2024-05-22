@@ -4,7 +4,7 @@ title: "unclassified: "
 labels: ["unclassified", "triage"]
 body:
   - type: markdown
-    value: Please open a Feature Request, Docs, or Bug Report issue, but if none of those are applicable you can use this generic form.
+      value: Please open a Feature Request, Docs, or Bug Report issue, but if none of those are applicable you can use this generic form.
   - type: textarea
     id: description
     attributes:
@@ -13,7 +13,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/strangelove-ventures/oss-repo-template-golang/blob/main/CODE_OF_CONDUCT.md). 
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
