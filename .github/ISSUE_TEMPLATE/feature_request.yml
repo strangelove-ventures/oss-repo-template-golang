@@ -1,6 +1,6 @@
 name: Feature Request
 description: Request an enhancement or new feature
-title: "feature: "
+title: "[Feature]: "
 body:
   - type: textarea
     id: inspiration
@@ -11,7 +11,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: vallueadd
+    id: valueadd
     attributes:
       label: Use Cases and Audiences
       description: What new possibilities does this feature enable, and what types of users will find it helpful?
