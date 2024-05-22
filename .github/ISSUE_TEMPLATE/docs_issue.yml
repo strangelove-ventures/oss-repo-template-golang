@@ -1,6 +1,6 @@
 name: Docs Issue
 description: Report an error or omission in the documentation.
-title: "docs: "
+title: "[Docs]: "
 labels: ["docs", "triage"]
 body:
   - type: markdown
