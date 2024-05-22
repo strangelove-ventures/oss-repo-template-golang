@@ -60,3 +60,11 @@ checksum:
 release:
   prerelease: auto
   draft: true
+
+announce:
+  slack:
+    enabled: true
+    message_template: '{{ .ProjectName }} {{ .Tag }} is out! Check it out at {{ .ReleaseURL }}'
+    channel: '#release-announce'
+    username: 'SL Release Bot'
+    icon_emoji: 'strangelove'
