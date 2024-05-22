@@ -1,14 +1,3 @@
-## All Submissions:
-
-[ ] I have read and agree to follow the [Code of Conduct](../../../CODE_OF_CONDUCT.md) for this project.
-[ ] I have read and followed the guidelines in the [Contributor's Guide](../../../CONTRIBUTING.md).
-[ ] I understand I should follow the guidelines in the [Security Guide](../../../SECURITY.md) for any security-related issues or PRs.
-[ ] I have checked to ensure there aren't other open [Pull Requests](../../../pulls) for the same update/change.
-[ ] If applicable, I have written the appropriate tests for my new code.
-[ ] If applicable, I have updated the appropriate documentation for new, updated, deprecated, or removed functionality.
-[ ] I have run the linter on my code prior to submitting the PR.
-[ ] All tests are passing locally for me.
-
 ### What kind of change does this PR introduce?** (Bug fix, feature, docs update, ...)
 
 
@@ -25,3 +14,11 @@ If so, please describe what changes users might need to make as a result of this
 ### Other information
 e.g. Does this impact upstream or downstream dependencies in other projects?
 
+-[ ] I have read and agree to follow the [Code of Conduct](../../../CODE_OF_CONDUCT.md) for this project.
+-[ ] I have read and followed the guidelines in the [Contributor's Guide](../../../CONTRIBUTING.md).
+-[ ] I understand I should follow the guidelines in the [Security Guide](../../../SECURITY.md) for any security-related issues or PRs.
+-[ ] I have checked to ensure there aren't other open [Pull Requests](../../../pulls) for the same update/change.
+-[ ] If applicable, I have written the appropriate tests for my new code.
+-[ ] If applicable, I have updated the appropriate documentation for new, updated, deprecated, or removed functionality.
+-[ ] I have run the linter on my code prior to submitting the PR.
+-[ ] All tests are passing locally for me.
