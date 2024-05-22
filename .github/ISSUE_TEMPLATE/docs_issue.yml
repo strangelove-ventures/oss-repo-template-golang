@@ -1,18 +1,16 @@
 name: Docs Issue
-description: File a bug report.
-title: "[Docs Issue]: "
+description: Report an error or omission in the documentation.
+title: "docs: "
 labels: ["docs", "triage"]
 body:
   - type: markdown
     attributes:
-      value: Thanks for taking the time to let us know how we can approve the docs!
+      value: Thanks for taking the time to let us know how we can improve the docs!
   - type: input
     id: docs_page_link
     attributes:
       label: What page needs improvement?
-      value: Link a URL if possible
-    validations:
-      required: true
+      value: Link a URL
   - type: textarea
     id: description
     attributes:
@@ -32,10 +30,3 @@ body:
         - label: I agree to follow this project's Code of Conduct
           required: true
   - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
