@@ -1,6 +1,6 @@
 module github.com/strangelove-ventures/oss-repo-template
 
-go 1.21
+go 1.21.0
 
 require (
 	github.com/cosmos/cosmos-sdk v0.47.11-0.20240417094812-f556fd956fb1
