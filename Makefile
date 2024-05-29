@@ -20,8 +20,8 @@ lint:
 	@echo "--> Running linter"
 	@if ! $(golangci_lint_cmd) --version 2>/dev/null | grep -q $(golangci_version); then \
         go install github.com/golangci/golangci-lint/cmd/golangci-lint@$(golangci_version); \
-    fi
-	@$(golangci_lint_cmd) run ./... --timeout 15m
+  fi
+	      @$(golangci_lint_cmd) run ./... --timeout 15m
 
 .PHONY: lint-fix
 ## lint-fix: Lint the repository and fix warnings (if applicable)
@@ -40,3 +40,10 @@ gofumpt:
 		go install mvdan.cc/gofumpt@$(gofumpt_version); \
 	fi
 	@gofumpt -l -w .
+
+### Interchain Tests ###
+.PHONY: ictest-cosmos-chain
+## ictest-cosmos-chain: Run the Cosmos chain interchaintest
+ictest-cosmos-chain:
+	@echo "--> Running Cosmos chain interchain test"
+	@go test -v -run TestChainStart
