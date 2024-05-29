@@ -69,5 +69,6 @@ func TestChainStart(t *testing.T) {
 	})
 
 	// wait for 5 blocks
-	testutil.WaitForBlocks(ctx, 5, chain)
+	err = testutil.WaitForBlocks(ctx, 5, chain)
+	require.NoError(t, err)
 }
