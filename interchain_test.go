@@ -15,7 +15,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
-// TestChainStart spins up a gaia chain and waits for 5 blocks
+// TestChainStart spins up a gaia chain and waits for 5 blocks.
 func TestChainStart(t *testing.T) {
 	if testing.Short() {
 		t.Skip("skipping in short mode")
