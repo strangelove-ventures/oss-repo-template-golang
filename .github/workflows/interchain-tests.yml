@@ -1,0 +1,31 @@
+# This workflow is designed to run e2e tests that make use of interchaintest.
+# Please modify the below configurations to ensure the workflow works
+# correctly for your project.
+#
+name: "e2e Interchaintests"
+
+on:
+    push:
+        branches: [ main ]
+    pull_request:
+
+jobs:
+    interchain-tests:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                # list names of `make` commands to run e2e tests on
+                test:
+                  - ictest-cosmos-chain
+            fail-fast: false
+        steps:
+            - name: Set up Go 1.21
+              uses: actions/setup-go@v5
+              with:
+                go-version: 1.21
+            
+            - name: checkout chain
+              uses: actions/checkout@v4
+
+            - name: run test
+              run: make ${{ matrix.test }}
