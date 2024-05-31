@@ -5,8 +5,6 @@
 Welcome to the Strangelove contributor guidelines. We are excited to have you here and look forward to your contributions!
 Contributors are expected to adhere to the guidelines outlined in this document as well as our [code of conduct](./CODE_OF_CONDUCT.md).
 
-[Should Contributor Licensing information be included here?]
-
 ##  Contributing
 
 There are many ways to contribute, from writing tutorials or blog posts, improving the documentation, 
@@ -18,7 +16,8 @@ First thing to note is that if you believe you have discovered a security vulner
 Please report it via email to security@strange.love. For more information on reporting security vulnerabilities, 
 please see our [security policy](./SECURITY.md).
 
-When creating a bug report, please include as much detail as possible. At a minimum be sure to include the following:
+When creating a bug report, please use the [template](./.github/ISSUE_TEMPLATE/bug_report.yml) and include as much 
+detail as possible. At a minimum be sure to include the following:
 - What you were trying to do
 - How the bug can be reproduced
 - What you expected to happen
@@ -26,9 +25,9 @@ When creating a bug report, please include as much detail as possible. At a mini
 
 ### Feature Requests & Enhancements
 
-Feature requests and other enhancements can be made using the [template](./.github/ISSUE_TEMPLATE/feature_request.md) provided.
+Feature requests and other enhancements can be made using the [template](./.github/ISSUE_TEMPLATE/feature_request.yml) provided.
 Please provide as much detail as possible, including the problem you are trying to solve and the solution you would like to see,
-along with possible alternatives you have considered if applicable. Understanding the usecases and the benefits the new feature
+along with possible alternatives you have considered if applicable. Understanding the use cases and the benefits the new feature
 or enhancement would bring to users helps the team to prioritize and implement the feature.
 
 ### Doc Changes
@@ -47,7 +46,9 @@ When opening a PR, please ensure that the PR description includes the issue numb
 This helps to ensure that the PR is linked to the issue and that the issue is closed when the PR is merged.
 
 
+### Contributor License Agreement
 
-
-
-[INSERT PROJECT SPECIFIC INFORMATION HERE e.g. how to run the project locally, environment setup, running tests locally]
+Before opening a PR, please review LICENSE.md and familiarize yourself with its terms.
+Please be advised that by opening a PR, you are granting Strangelove (or the owner of the relevant repository) a perpetual,
+worldwide, non-exclusive, no-charge, royalty-free, irrevocable license, in copyright and in patent, with respect to your
+Contribution and any portion thereof.
