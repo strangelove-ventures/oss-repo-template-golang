@@ -6,7 +6,7 @@ require (
 	github.com/cosmos/cosmos-sdk v0.47.11-0.20240417094812-f556fd956fb1
 	github.com/strangelove-ventures/interchaintest/v7 v7.0.0
 	github.com/stretchr/testify v1.9.0
-	go.uber.org/zap v1.26.0
+	go.uber.org/zap v1.27.0
 )
 
 require (
