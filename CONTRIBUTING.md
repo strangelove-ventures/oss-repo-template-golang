@@ -12,9 +12,8 @@ submitting bug reports and feature requests, or writing code which can be incorp
 
 ### Bug Reports
 
-First thing to note is that if you believe you have discovered a security vulnerability *DO NOT* use the issue tracker. 
-Please report it via email to security@strange.love. For more information on reporting security vulnerabilities, 
-please see our [security policy](./SECURITY.md).
+First thing to note is that if you believe you have discovered a security vulnerability *DO NOT* use the public issue tracker. 
+Please read our [security policy](./SECURITY.md) for more information on reporting security vulnerabilities.
 
 When creating a bug report, please use the [template](./.github/ISSUE_TEMPLATE/bug_report.yml) and include as much 
 detail as possible. At a minimum be sure to include the following:
