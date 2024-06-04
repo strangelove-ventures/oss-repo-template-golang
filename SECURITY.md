@@ -7,3 +7,6 @@ To report a security issue, please use the GitHub Security Advisory ["Report a V
 The Strangelove team will send a response indicating the next steps in handling your report. After the initial reply to your report, the security team will keep you informed of the progress towards a fix and full announcement, and may ask for additional information or guidance. We may also coordinate with Amulet or other security consultants in the Cosmos/IBC space. 
 
 Report security bugs in third-party modules or plugins to the person or team maintaining the module. 
+
+The GitHub Security Advisory "Report a Vulnerability" tab should always be the first step in reporting a security related issue. 
+If for some reason you are unable to report through GitHub, please contact the Strangelove team at security@strange.love.
