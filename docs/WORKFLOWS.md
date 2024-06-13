@@ -24,7 +24,7 @@ Description: This workflow runs a CodeQL analysis on the repository to identify 
 
 Configuration Steps:
 
-1. Configure which languages to analyze by updating the `language` section under the `strategy` section. There are additionall comments within the workflow stating which languages CodeQL supports.
+1. Configure which languages to analyze by updating the `language` section under the `strategy` section. There are additional comments within the workflow stating which languages CodeQL supports.
 
 ---
 
