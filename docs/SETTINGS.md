@@ -113,7 +113,6 @@ Default settings should be alright here.
 
 Default settings should be alright here.
 
-
 ## Webhooks  
 
 Default settings should be alright here.
@@ -142,6 +141,16 @@ Default settings should be alright here.
 
 - Enable Private vulnerability reporting
 - Enable dependency graph
+
+It is important to ensure that at least two maintainers are subscribed to receive alerts for security vulnerabilities.
+To ensure this is the case, you need to ensure that you are watching the repo and that you enable `Custom` events for
+`Security alerts`. After that you will need to navigate to your personal GitHub account settings and ensure that
+you have `Notifications` configured to receive alerts for `Participating`, `@mentions`, and `custom` such that you 
+will receive notifications via email.
+
+To read more about how to ensure you are receiving notifications for security alerts please review the comment found in
+[this issue](https://github.com/strangelove-ventures/oss-repo-template-golang/pull/31#issuecomment-2142932841). If you
+are unsure about any of this or need further guidance please reach out in the `#help-github` channel in Slack.
 
 ### Dependabot
 
