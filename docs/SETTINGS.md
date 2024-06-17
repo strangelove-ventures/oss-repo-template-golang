@@ -155,7 +155,7 @@ Default settings should be alright here.
 
 ### Secret scanning
 
-- Currently, secret scanning is disabled but can be enabled if needed.
+- Enable secret scanning to receive alerts on GitHub for detected secrets, keys, or other tokens.
 
 ## Deploy keys  
 
