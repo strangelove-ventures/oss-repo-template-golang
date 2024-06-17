@@ -1,7 +1,5 @@
 # Repository Settings
 
----
-
 These are the default settings that should be configured in each repo, changes can be made as needed.
 The settings described here should serve as a baseline, it is more important that there is some setting in place rather 
 than the exact settings being used across every repo.
@@ -10,8 +8,6 @@ After a repo's settings are configured this file can be safely deleted from the 
 project to run.
 
 ## General
-
----
 
 ### Default Branch
 - Default branch should be `main`
@@ -32,8 +28,6 @@ project to run.
 
 ## Collaborators and teams  
 
----
-
 Every repo should have a team or set of teams configured in the `Manage Access` section. Ideally there should be
 two teams where one team is given `Admin` access and the other team is given either `Maintain` or `Write` access.
 
@@ -41,8 +35,6 @@ The team responsible for code review should also be added to the [CODEOWNERS](..
 they are automatically added as reviewers when a PR is opened. Read more on code owners [here](https://help.github.com/articles/about-codeowners/).
 
 ## Moderation options
-
----
 
 ### Interaction limits
 
@@ -58,8 +50,6 @@ Default settings should be alright here.
 Default settings should be alright here.
 
 ## Branches
-
----
 
 A new branch protection rule should be created for the `main` branch. This rule should have the following settings:
 
@@ -78,13 +68,9 @@ and/or other important branches that should not be merged into without proper re
 
 ## Tags  
 
----
-
 Default settings should be alright here. 
 
 ## Rules  
-
----
 
 ### Rulesets
 
@@ -94,9 +80,7 @@ Default settings should be alright here.
 
 Default settings should be alright here.
 
-## Actions  
-
----
+## Actions
 
 ### General
 
@@ -124,43 +108,29 @@ Default settings should be alright here.
 
 ## Webhooks  
 
----
-
 Default settings should be alright here.
 
 ## Copilot  
-
----
 
 Default settings should be alright here.
 
 ## Environments  
 
----
-
 Default settings should be alright here.
 
 ## Codespaces  
-
----
 
 Default settings should be alright here.
 
 ## Pages  
 
----
-
 Default settings should be alright here.
 
 ## Custom Properties 
 
----
-
 Default settings should be alright here.
 
-## Code security and analysis 
-
----
+## Code security and analysis
 
 - Enable Private vulnerability reporting
 - Enable dependency graph
@@ -181,13 +151,9 @@ Default settings should be alright here.
 
 ## Deploy keys  
 
----
-
 Default settings should be alright here and can be adjusted as needed.
 
-## Secrets and variables  
-
----
+## Secrets and variables
 
 Default settings should be alright here and can be adjusted as needed.
 
