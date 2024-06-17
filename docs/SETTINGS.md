@@ -34,6 +34,9 @@ two teams where one team is given `Admin` access and the other team is given eit
 The team responsible for code review should also be added to the [CODEOWNERS](../.github/CODEOWNERS) file so that
 they are automatically added as reviewers when a PR is opened. Read more on code owners [here](https://help.github.com/articles/about-codeowners/).
 
+If it is unclear which teams should be configured as codeowners or have admin access, please reach out in Slack in the
+`#help-github` channel.
+
 ## Moderation options
 
 ### Interaction limits
@@ -56,10 +59,15 @@ A new branch protection rule should be created for the `main` branch. This rule 
 - Enable require a pull request before merging
 - Enable require approvals with at least 1 approval needed before merging
 - Enable require review from Code Owners
-- Enable require status checks to pass before merging
-  - TODO: Fill out this section with all status checks that should be required
-  - This will have a list of all CI actions that MUST pass in order for a PR to be merged.
-  - A conversation should be had with the team to determine what these checks should be before accepting this doc.
+- Enable require status checks to pass before merging with the following CI actions being required:
+  - Lint PR titles to validate they follow conventional commit format
+  - golangci-lint should be passing
+  - All unit, integration, and e2e tests are passing
+  - Codebase is compiling from the branch used in the PR
+- The following CI actions should run on every PR but should not be required status checks before merging:
+  - Markdown link checker
+  - CodeQL analysis
+  - Spell checker
 - Enable require branches to be up-to-date before merging
 - Enable do not allow bypassing the above settings
 
