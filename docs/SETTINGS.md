@@ -4,6 +4,11 @@ These are the default settings that should be configured in each repo, changes c
 The settings described here should serve as a baseline, it is more important that there is some setting in place rather 
 than the exact settings being used across every repo.
 
+To ensure that the repo is in compliance with standard OSS community expectations, you should make use of the GitHub
+[community standards and guidelines page](https://github.com/strangelove-ventures/oss-repo-template-golang/community) 
+and ensure that everything is in the green. You may notice that the `Pull request template` section is not green, this 
+seems to be an issue with the way GitHub is checking for the presence of the file.
+
 After a repo's settings are configured this file can be safely deleted from the repo since it is not needed for the
 project to run.
 
@@ -50,7 +55,8 @@ Default settings should be alright here.
 
 ### Reported content
 
-Default settings should be alright here.
+Enable `Prior contributors and collaborators` to ensure that users who have previously contributed to the repo are able to
+report content.
 
 ## Branches
 
