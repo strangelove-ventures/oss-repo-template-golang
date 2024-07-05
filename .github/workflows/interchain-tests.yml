@@ -11,6 +11,7 @@ on:
 
 env:
   GO_VERSION: 1.21
+  READ_PAT: ${{ secrets.ORG_READ_PAT }}
 
 jobs:
     interchain-tests:
@@ -29,6 +30,9 @@ jobs:
             
             - name: checkout chain
               uses: actions/checkout@v4
+
+            - name: Configure git to use PAT for reading private repositories
+              run: git config --global url."https://${{ env.READ_PAT }}:x-oauth-basic@github.com/".insteadOf "https://github.com/"
 
             - name: run test
               run: make ${{ matrix.test }}
