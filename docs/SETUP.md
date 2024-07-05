@@ -13,6 +13,8 @@ Follow the guidelines specified in [WORKFLOWS.md](./WORKFLOWS.md) to configure t
 ## Clean Up
 
 Please delete the following setup documents from this repository:
+- `./PAT-configuration.png`
+- `./PATs.md`
 - `./SETUP.md`
 - `./SETTINGS.md`
 - `./WORKFLOWS.md`
