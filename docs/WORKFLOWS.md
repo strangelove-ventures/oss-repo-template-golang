@@ -10,9 +10,14 @@ File: [build-and-test.yml](../.github/workflows/build-and-test.yml)
 
 Description: This workflow ensures the project is tidy, buildable, and all go tests are passing before merging any changes into the main branch.  
 
-Configuration Steps:  
+Configuration Steps:
 
 1. In the workflow, ensure the project's golang version matches what is configured under the `env` section.
+1. If the project depends upon private repositories found in the `go.mod` file, another environment variable must be configured in the workflow. Set the `READ_PAT` environment variable to a personal access token with read access to all the dependant private repositories. Strangelove is already configured with a PAT labeled `ORG_READ_PAT` found in the organization's secrets. If this project belongs to Strangelove and will be accessing private repositories within the organization, no configuration is required.
+1. If the project does not depend upon private repositories, remove the `READ_PAT` environment variable from the workflow and remove the step that configures the git config on lines `39`, `64`, `83`.
+
+Notes:
+- Please see [PAT Configuration](./PATs.md) for more information on how to configure a personal access token for private repository access.
 
 ---
 
@@ -39,6 +44,11 @@ Configuration Steps:
 1. In the workflow, ensure the project's golang version matches what is configured under the `env` section.
 1. In the project's base directory, open the [Makefile](../Makefile) and configure the `Interchain Tests` section. This section outlines the necessary targets to execute every interchain test. Ensure each target is prefixed with `ictest-`.
 1. In the workflow, visit the `matrix` section on line `16` and configure the `test` array to match every `make` target previously defined in the last step. The array only needs to include the name of the target.
+1. If the project depends upon private repositories found in the `go.mod` file, another environment variable must be configured in the workflow. Set the `READ_PAT` environment variable to a personal access token with read access to all the dependant private repositories. Strangelove is already configured with a PAT labeled `ORG_READ_PAT` found in the organization's secrets. If this project belongs to Strangelove and will be accessing private repositories within the organization, no configuration is required.
+1. If the project does not depend upon private repositories, remove the `READ_PAT` environment variable from the workflow and remove the step that configures the git config on line `34`.
+
+Notes:
+- Please see [PAT Configuration](./PATs.md) for more information on how to configure a personal access token for private repository access.
 
 ---
 
@@ -95,7 +105,7 @@ Description: This workflow checks all files for spelling errors.
 
 Configuration Steps:
 1. No configuration steps are necessary for the workflow file.
-2. In the project's base directory, open the [.codespellrc](../.codespellrc) file and configure any settings as needed. Sections exist for defining files to skip over, words to ignore, etc. See the [codespell Documentation](https://pypi.org/project/codespell/) under the `Using a config file` section for more information.
+1. In the project's base directory, open the [.codespellrc](../.codespellrc) file and configure any settings as needed. Sections exist for defining files to skip over, words to ignore, etc. See the [codespell Documentation](https://pypi.org/project/codespell/) under the `Using a config file` section for more information.
 
 ---
 
