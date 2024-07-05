@@ -13,7 +13,7 @@ Description: This workflow ensures the project is tidy, buildable, and all go te
 Configuration Steps:
 
 1. In the workflow, ensure the project's golang version matches what is configured under the `env` section.
-1. If the project depends upon private repositories found in the `go.mod` file, another environment variable must be configured in the workflow. Set the `READ_PAT` environment variable to a personal access token with read access to all the dependant private repositories. Strangelove is already configured with a PAT labeled `ORG_READ_PAT` found in the organization's secrets. If this project belongs to Strangelove and will be accessing private repositories within the organization, no configuration is required.
+1. If the project depends upon private repositories found in the `go.mod` file, another environment variable must be configured in the workflow. Set the `READ_PAT` environment variable to a personal access token with read access to all the dependent private repositories. Strangelove is already configured with a PAT labeled `ORG_READ_PAT` found in the organization's secrets. If this project belongs to Strangelove and will be accessing private repositories within the organization, no configuration is required.
 1. If the project does not depend upon private repositories, remove the `READ_PAT` environment variable from the workflow and remove the step that configures the git config on lines `39`, `64`, `83`.
 
 Notes:
@@ -44,7 +44,7 @@ Configuration Steps:
 1. In the workflow, ensure the project's golang version matches what is configured under the `env` section.
 1. In the project's base directory, open the [Makefile](../Makefile) and configure the `Interchain Tests` section. This section outlines the necessary targets to execute every interchain test. Ensure each target is prefixed with `ictest-`.
 1. In the workflow, visit the `matrix` section on line `16` and configure the `test` array to match every `make` target previously defined in the last step. The array only needs to include the name of the target.
-1. If the project depends upon private repositories found in the `go.mod` file, another environment variable must be configured in the workflow. Set the `READ_PAT` environment variable to a personal access token with read access to all the dependant private repositories. Strangelove is already configured with a PAT labeled `ORG_READ_PAT` found in the organization's secrets. If this project belongs to Strangelove and will be accessing private repositories within the organization, no configuration is required.
+1. If the project depends upon private repositories found in the `go.mod` file, another environment variable must be configured in the workflow. Set the `READ_PAT` environment variable to a personal access token with read access to all the dependent private repositories. Strangelove is already configured with a PAT labeled `ORG_READ_PAT` found in the organization's secrets. If this project belongs to Strangelove and will be accessing private repositories within the organization, no configuration is required.
 1. If the project does not depend upon private repositories, remove the `READ_PAT` environment variable from the workflow and remove the step that configures the git config on line `34`.
 
 Notes:
